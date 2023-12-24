@@ -17,7 +17,7 @@ const WorkItem = ({ description, i, img, title, link }: Props) => {
         i % 2 !== 0 ? "flex-row-reverse" : ""
       }`}
     >
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-4 max-w-[65%]">
         <h2 className="text-[24px] font-[600]">{title}</h2>
         <p className="text-[16px]">{description}</p>
         <Link
@@ -34,7 +34,7 @@ const WorkItem = ({ description, i, img, title, link }: Props) => {
         </Link>
         <p></p>
       </div>
-      <div>
+      <div className="max-w-[400px]">
         <Image
           className="rounded-md"
           src={img}

@@ -11,7 +11,7 @@ const HomePage = () => {
           Frontend developer and student at the University TUIT!
         </p>
         <Button className="bg-green shadow-md mt-[20px] shadow-green-shadow hover:bg-green-shadow transition w-[70%] p-7">
-          <a download={"/docs/resume.doc"} className="text-[16px] font-[500]">
+          <a download={true} href={"/docs/resume.doc"} className="text-[16px] font-[500]">
             Click to see resume
           </a>
         </Button>
