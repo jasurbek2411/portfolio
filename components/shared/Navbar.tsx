@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const Navbar = () => {
+export const Navbar = () => {
   const pathname = usePathname();
 
 
@@ -65,4 +65,3 @@ const navs = [
   },
 ];
 
-export default Navbar;
